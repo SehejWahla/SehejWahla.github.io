@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sehej Wahla | Software Engineer</title>
-    <!-- Link to our Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for a nice, modern font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/b99e675b6e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,6 +17,7 @@
             <div class="logo">SW.</div>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -29,72 +27,170 @@
     <main>
         <section id="hero">
             <div class="hero-content">
-                <h1>Sehej Wahla</h1>
-                <p class="subtitle">Full-Stack Software Engineer | Cloud & Microservices</p>
-                <a href="#projects" class="btn">View My Work</a>
+                <h1 class="reveal">Sehej Wahla</h1>
+                <p class="subtitle">Building <span id="typing-text"></span></p>
+                <a href="#projects" class="btn reveal">View My Work</a>
+            </div>
+             <div class="scroll-down-indicator">
+                <a href="#about"><span></span></a>
             </div>
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a results-driven Software Engineer with hands-on experience in designing and deploying scalable, cloud-native software solutions. My expertise lies in building event-driven microservice architectures using modern technologies like Golang, Node.js, and Kafka. I am passionate about solving complex problems, optimizing system performance, and leveraging automation to deliver robust, high-quality products.
-            </p>
+            <div class="reveal">
+                <h2>About Me</h2>
+                <p class="about-text">
+                    Proactive and versatile Software Engineer with deep experience architecting and delivering scalable, full-stack solutions. My expertise lies in modern backend technologies including Golang, .NET Core, and Node.js, complemented by a strong command of microservices, event-driven architectures, and DevOps automation. I'm a collaborative team player dedicated to writing high-quality, maintainable code and driving projects that deliver significant improvements in efficiency and performance.
+                </p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="reveal">
+                <h2>Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <p>Golang, C# (.NET Core), Node.js (TypeScript), Python, SQL</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <p>Microservices, REST APIs, GraphQL, WebSockets, gRPC, ASP.NET Core</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <p>React.js, Angular, HTML5, CSS3, Tailwind CSS, Next.js</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud & DevOps</h3>
+                        <p>AWS (ECS, Fargate, Lambda, SQS), Docker, Kubernetes, Terraform, CI/CD</p>
+                    </div>
+                     <div class="skill-category">
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, MongoDB, Redis, DynamoDB</p>
+                    </div>
+                     <div class="skill-category">
+                        <h3>Event Streaming</h3>
+                        <p>Apache Kafka, RabbitMQ, AWS SQS/SNS</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <h3>Monolith to Microservices Migration</h3>
-                    <p>Led the re-architecture of a legacy monolith into a scalable, event-driven system, increasing peak load capacity by 5x and reducing processing time by 70%.</p>
-                    <div class="tags">
-                        <span>Golang</span>
-                        <span>Kafka</span>
-                        <span>AWS ECS</span>
-                        <span>CI/CD</span>
+            <div class="reveal">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <!-- Project from Nagarro Software -->
+                    <div class="project-card reveal">
+                        <h3>Monolith to Microservices Migration</h3>
+                        <p>Led the re-architecture of a legacy PHP monolith into an event-driven system using .NET Core and Golang, reducing order processing time by 70% and processing over 100k events/sec with Kafka.</p>
+                        <div class="tags">
+                            <span>Golang</span>
+                            <span>.NET Core</span>
+                            <span>Kafka</span>
+                            <span>Microservices</span>
+                            <span>AWS</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <h3>AI-Powered Customer Interaction System</h3>
-                    <p>Built an intelligent call routing and response system that automated 90% of routine customer inquiries using TwilioSDK and Grok AI for natural language understanding.</p>
-                    <div class="tags">
-                        <span>Twilio</span>
-                        <span>Grok AI</span>
-                        <span>Node.js</span>
-                        <span>React</span>
+                    <!-- Project from Sendatradie -->
+                    <div class="project-card reveal">
+                        <h3>AI-Powered Call Routing System</h3>
+                        <p>Engineered an intelligent call routing system using .NET Core (Web API) and Angular, optimizing logic for 1000+ daily calls and increasing positive user engagement by 20%.</p>
+                        <div class="tags">
+                            <span>.NET Core</span>
+                            <span>Angular</span>
+                            <span>AI/ML</span>
+                            <span>Algorithm Design</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <h3>Real-Time Logistics & Tracking Platform</h3>
-                    <p>Engineered a real-time driver tracking system that improved dispatch efficiency by 300%, using Golang and WebSockets to push live data to a React front-end.</p>
-                    <div class="tags">
-                        <span>Golang</span>
-                        <span>WebSockets</span>
-                        <span>Kafka</span>
-                        <span>React</span>
+                    <!-- Project from Wobitech -->
+                    <div class="project-card reveal">
+                        <h3>Real-Time Human Capital Management Platform</h3>
+                        <p>Architected a real-time HCM platform using Node.js and React, which reduced manual data processing time by 80% and improved user retention metrics by 15% through A/B testing.</p>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>WebSockets</span>
+                            <span>A/B Testing</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
-            <div class="social-links">
-                <a href="https://github.com/SehejWahla" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/sahejpreet-singh-a85ab9370/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:sehejwahla@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+            <div class="reveal">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
+                <div class="social-links">
+                    <a href="https://github.com/SehejWahla" target="_blank" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/sahejpreet-singh-a85ab9370/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:sehejwahla@gmail.com" class="social-icon"><i class="fas fa-envelope"></i> Email</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Sehej Wahla. Built with passion and code.</p>
+        <p>&copy; 2024 Sehej Wahla. Crafted with code and creativity.</p>
     </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Typing Animation ---
+    const typingText = document.getElementById('typing-text');
+    const phrases = [
+        "Scalable Backend Systems.",
+        "Event-Driven Architectures.",
+        "Cloud-Native Solutions.",
+        "High-Performance Web Apps."
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentPhrase = phrases[phraseIndex];
+        if (isDeleting) {
+            typingText.textContent = currentPhrase.substring(0, charIndex--);
+        } else {
+            typingText.textContent = currentPhrase.substring(0, charIndex++);
+        }
+
+        let typeSpeed = isDeleting ? 75 : 150;
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            typeSpeed = 2000; // Pause at end of phrase
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+    type();
+
+
+    // --- Scroll Reveal Animation ---
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+
+});
+</script>
 
 </body>
 </html>
